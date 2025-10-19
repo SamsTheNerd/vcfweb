@@ -69,7 +69,7 @@ END:VCARD`
 // https://stackoverflow.com/questions/54871408/downloading-vcf-file-on-iphone-browser
 function downloadContactCard(contactCard){
     // build data url
-    var url = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(contactCard);
+    var url = 'data:text/x-vcard;charset=utf-8,' + encodeURIComponent(contactCard);
 
     // ask the browser to download it
     document.location.href = url;
